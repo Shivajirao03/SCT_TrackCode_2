@@ -37,7 +37,7 @@ function pauseTimer() {
 
 function resumeTimer() {
   if (!intervalId) {
-    startTime = Date.now() - elapsedTime;  // Adjust startTime to account for the previous elapsed time
+    startTime = Date.now() - elapsedTime; 
     intervalId = setInterval(() => {
       elapsedTime = Date.now() - startTime;
       timer.textContent = formatTime(elapsedTime);
@@ -58,7 +58,7 @@ function resetTimer() {
 }
 
 function addLapTime() {
-  // ... (same logic as before)
+
 }
 
 startButton.addEventListener('click', () => {
